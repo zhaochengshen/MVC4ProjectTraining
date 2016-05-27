@@ -14,7 +14,7 @@ namespace Sample3_4.Controllers
         public ActionResult Index()
         {
             TempData["TempData"] = "使用TempData进行跨行为方法传值！";
-            Response.Redirect("About");
+            Response.Redirect("About"); 
             return View();
         }
         public ActionResult About()
