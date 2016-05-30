@@ -1,0 +1,64 @@
+﻿@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Index</title>
+
+    <style>
+        .div > div {
+            margin: 5px;
+            border: solid 1px blue;
+        }
+
+        #Aspx {
+            float: left;
+        }
+
+        #Razor {
+            float: left;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        @foreach (var color in ViewData["ViewDataListColors"] as List<string>)
+        {
+            <font color="@color">我的颜色是 @color</font> <br />
+        }
+
+        =====================================================<br />
+        @foreach (var color in ViewBag.ViewBagListColors as List<string>)
+        {
+            <font color="@color">我的颜色是 @color</font><br />
+        }
+
+
+        <div style="margin-top:50px">
+            <div id="Razor" class="div">
+                <div>Razor</div>
+                <div id="div1">@@{int a=123; string b="abc";} </div>
+                <div id="div2"><div> @@Model.Content </div></div>
+                <div id="div3">@@html.Raw(Model.Content)</div>
+                <div id="div4">@@foreach(var item in collection{ 我是文字 @@item.Value}) </div>
+                <div id="div5">@@for(int i=0i<2;i++){目前是滴 @@i.} </div>
+                <div id="div6">@@(Model.Content == "" ? "空" : Model.Content) </div>
+
+            </div>
+            <div id="Aspx" class="div">
+                <div>Aspx</div>
+                <div id="div1"><% int a=123; string b="abc" %>  </div>
+                <div id="div2">  <%:Model.Content %> </div>
+                <div id="div3"><% foreach(var item in collection){ <span><%: item.Key %></span> } %> </div>
+                <div id="div4"><% foreach(var item in collection){ 我是文字<%:item.Key %> } %>  </div>
+                <div id="div5"><%for(int i=0;i<3;i++){%> 第<%=i %>个<%}%> </div>
+                <div id="div6"><%:Model.Content ==""? "空": Model.Content%> </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
