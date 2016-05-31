@@ -1,0 +1,15 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>@Page.Title</title>
+    @RenderSection("head", required: false)
+</head>
+<body>
+    <div>
+        <h1>Rozor视图引擎</h1>
+        @RenderBody()
+    </div>
+    <footer>@RenderSection("Footer")</footer>
+
+</body>
+</html>

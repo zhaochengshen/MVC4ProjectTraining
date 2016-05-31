@@ -1,0 +1,22 @@
+﻿@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Index</title>
+</head>
+<body>
+    <div>
+        @using (Html.BeginForm("PassWord", "Test4"))
+        {
+            @: 请输入用户名： @Html.TextBox("name")
+            @: 请输入 密 码：@Html.Password("password")
+            <input type="submit" value="提交">
+        }
+    </div>
+</body>
+</html>

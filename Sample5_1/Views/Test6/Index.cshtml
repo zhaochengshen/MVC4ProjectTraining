@@ -1,0 +1,28 @@
+﻿@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Index</title>
+</head>
+<body>
+    <div>
+        @using (Html.BeginForm("UserDisplay", "test6"))
+        {
+            <h1> 用户信息</h1>
+            @:用户名 @Html.TextBox("name")
+            @:年龄 @Html.TextBox("age")
+            @:性别 男 @Html.RadioButton("sex", "男")   女 @Html.RadioButton("sex", "女")
+            @:爱好 @Html.TextBox("hobby")
+            <input type="submit" value="提交" />
+
+
+        }
+
+    </div>
+</body>
+</html>

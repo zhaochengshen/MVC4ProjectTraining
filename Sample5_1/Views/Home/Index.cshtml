@@ -1,0 +1,27 @@
+﻿@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Index</title>
+</head>
+<body>
+    <div>
+
+        @using (Html.BeginForm("CheckBox", "Home"))
+        {
+            @:可供选择颜色：<br />
+            @:红色 @Html.CheckBox("Red", "true")
+            @:蓝色 @Html.CheckBox("Blue", "true")
+            @:绿色 @Html.CheckBox("Green", "true")
+            <input type="submit" value="提交" />
+
+            <input type="text" value="哈哈" id="txt" name="txt" />
+        }
+    </div>
+</body>
+</html>

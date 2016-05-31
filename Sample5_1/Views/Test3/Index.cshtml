@@ -1,0 +1,23 @@
+﻿@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Index</title>
+</head>
+<body>
+    <div>
+        @using (Html.BeginForm("TextBox", "test3"))
+        {
+            @: 请输入您的名字：<br />    
+            @Html.TextBox("name") <br />
+            @Html.TextBox("age") <br />
+            <input type="submit" value="提交" />
+        }
+    </div>
+</body>
+</html>

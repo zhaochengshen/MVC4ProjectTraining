@@ -1,0 +1,22 @@
+﻿@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Index</title>
+</head>
+<body>
+    <div>
+        @using (Html.BeginForm("DropDownList", "Test7"))
+        {
+            @:可以选择的水果
+            @Html.DropDownList("fruit", new SelectList(new[] { "苹果", "香蕉", "梨" }))
+            <input type="submit" value="提交" />
+        }
+    </div>
+</body>
+</html>

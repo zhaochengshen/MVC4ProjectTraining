@@ -1,0 +1,38 @@
+﻿@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Index</title>
+</head>
+<body>
+    <div>
+
+        @{
+            //生成随机数
+            int iFirst = 0;
+            int length = 4;//随机编码长度
+            int up = 0;//随机数产生范围上限
+            int down = 9;//随机数产生范围下限
+            string strCode = string.Empty;
+            Random ro = new Random(length * unchecked((int)DateTime.Now.Ticks));
+            iFirst = ro.Next(up, down);
+            for (int i = 0; i < length; i++)
+            {
+                Random ri = new Random(i * iFirst * unchecked((int)DateTime.Now.Ticks));
+                iFirst = ri.Next(up, down);
+                strCode += " " + iFirst;
+            }
+            <p>生成随机数</p>
+            <p>@strCode</p>
+
+
+        }
+
+    </div>
+</body>
+</html>

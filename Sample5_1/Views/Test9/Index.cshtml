@@ -1,0 +1,28 @@
+﻿@{
+    @Model Sample5_1.Models.Lunch
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Index</title>
+</head>
+<body>
+    <div>
+        @using (Html.BeginForm("Display", "Test9"))
+        {
+
+            @:午餐：
+            @:可供选择的水果:<br />
+            @Html.ListBox("fruit", new SelectList(new[] { "苹果", "香蕉", "橘子" }))
+            @:可供选择主食:<br />
+           // @Html.ListBoxFor(Model => Model.food, new SelectList(new[] { "米饭", "馒头" }, new { Multiple = "multiple" }))
+        @Html.ListBox("food", new SelectList(new[] { "米饭", "馒头" }), new { Multiple = "mutiple" })
+            <input type="submit" value="提交" />
+        }
+    </div>
+</body>
+</html>

@@ -1,0 +1,23 @@
+﻿@model Sample5_1.Models.Message
+
+@{
+        Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Index</title>
+</head>
+<body>
+    <div>
+        @using(Html.BeginForm("TextAreaFor","Test11")){
+            @:请输入信息：<br />
+            @Html.TextAreaFor(Model => Model.Content,2,20,null) <br />
+            <input type="submit" value="提交" />
+            }
+    </div>
+</body>
+</html>
