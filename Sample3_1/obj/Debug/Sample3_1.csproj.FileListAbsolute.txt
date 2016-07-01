@@ -23,6 +23,6 @@ E:\003 Study\MVC4ProjectTraining\Sample3_1\bin\zh-Hans\System.Web.Razor.resource
 E:\003 Study\MVC4ProjectTraining\Sample3_1\bin\zh-Hans\System.Web.WebPages.resources.dll
 E:\003 Study\MVC4ProjectTraining\Sample3_1\bin\zh-Hans\System.Web.WebPages.Deployment.resources.dll
 E:\003 Study\MVC4ProjectTraining\Sample3_1\bin\zh-Hans\System.Web.WebPages.Razor.resources.dll
+E:\003 Study\MVC4ProjectTraining\Sample3_1\obj\Debug\Sample3_1.csprojResolveAssemblyReference.cache
 E:\003 Study\MVC4ProjectTraining\Sample3_1\obj\Debug\Sample3_1.dll
 E:\003 Study\MVC4ProjectTraining\Sample3_1\obj\Debug\Sample3_1.pdb
-E:\003 Study\MVC4ProjectTraining\Sample3_1\obj\Debug\Sample3_1.csprojResolveAssemblyReference.cache

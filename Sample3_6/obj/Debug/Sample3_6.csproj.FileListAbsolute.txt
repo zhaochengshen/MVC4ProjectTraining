@@ -24,10 +24,10 @@ E:\003 Study\MVC4ProjectTraining\Sample3_6\bin\System.Web.WebPages.Razor.xml
 E:\003 Study\MVC4ProjectTraining\Sample3_6\bin\zh-Hans\EntityFramework.resources.dll
 E:\003 Study\MVC4ProjectTraining\Sample3_6\bin\zh-Hans\System.Web.Mvc.resources.dll
 E:\003 Study\MVC4ProjectTraining\Sample3_6\bin\zh-Hans\System.Web.Optimization.resources.dll
+E:\003 Study\MVC4ProjectTraining\Sample3_6\bin\zh-Hans\System.Web.Providers.resources.dll
 E:\003 Study\MVC4ProjectTraining\Sample3_6\bin\zh-Hans\System.Web.Razor.resources.dll
 E:\003 Study\MVC4ProjectTraining\Sample3_6\bin\zh-Hans\System.Web.WebPages.resources.dll
 E:\003 Study\MVC4ProjectTraining\Sample3_6\bin\zh-Hans\System.Web.WebPages.Deployment.resources.dll
 E:\003 Study\MVC4ProjectTraining\Sample3_6\bin\zh-Hans\System.Web.WebPages.Razor.resources.dll
 E:\003 Study\MVC4ProjectTraining\Sample3_6\obj\Debug\Sample3_6.dll
 E:\003 Study\MVC4ProjectTraining\Sample3_6\obj\Debug\Sample3_6.pdb
-E:\003 Study\MVC4ProjectTraining\Sample3_6\obj\Debug\Sample3_6.csprojResolveAssemblyReference.cache
